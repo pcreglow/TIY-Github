@@ -1,0 +1,16 @@
+{
+  "name": "TIY-Github",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pcreglow/TIY-Github",
+  "authors": [
+    "Phillip Creglow <phillipcreglow@msn.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
