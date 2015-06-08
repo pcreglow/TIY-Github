@@ -5,16 +5,14 @@
   "authors": [
     "Phillip Creglow <phillipcreglow@msn.com>"
   ],
-
   "license": "CC0",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests",
+    "tests"
   ],
-   "name": "my_great_project",
    "dependencies": {
      "octicons": "*"
   }
