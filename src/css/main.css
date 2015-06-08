@@ -133,8 +133,8 @@ body {
 }
 
 img {
-  width: 10%;
-  height: 10%;
+  width: 10em;
+  height: 10em;
   float: left;
   margin: 1em;
 }
@@ -143,9 +143,12 @@ img {
 }
 h4 {
   padding-top: 1em;
+  margin-bottom: 0;
 }
 #name {
   padding-bottom: 1em;
+  font-size: 18px;
+  color: darkgrey;
 }
 .stats {
   border-top: 1px solid lightgrey;
@@ -192,6 +195,22 @@ strong {
   font-size: 16px;
   font-weight: bold;
 }
+
+.octicon-repo {
+  text-decoration: none;
+  color: darkgrey;
+}
+.stars {
+  text-decoration: none;
+  color: darkgrey;
+  float: right;
+}
+.octicon-star {
+  text-decoration: none;
+  color: darkgrey;
+  float: right;
+}
+
 
 
 

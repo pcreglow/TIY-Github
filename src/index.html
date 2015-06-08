@@ -22,10 +22,10 @@
     <div class="container">
         <section class="tabs">
             <div class="tab-current">
-                <a id="tab-1" href=" " class="about">About</a>
+                <a id="tab-1" href="#about" class="about">About</a>
             </div>
             <div class="tab-silent">
-                <a id="tab-2" href=" " class="repos">Repositories</a>
+                <a id="tab-2" href="#repos" class="repos">Repositories</a>
             </div>
         </section>
         <section class="profile">
@@ -37,18 +37,28 @@
                     <li class="title">
                         <h4>The Octocat</h4>
                     </li>
-                    <li id="name">octocat</li>
-                    <li id="Github">GitHub</li>
-                    <li id="location">San Francisco</li>
-                    <li id="github-id"><a href="https://github.com/octocat">octocat@github.com</a></li>
-                    <li id="blog"><a href="http://www.github.com/blog">http://www.github.com/blog</a></li>
+                    <li id="name">
+                        <small>octocat</small>
+                    </li>
+                    <li id="Github">
+                        <span class="octicon octicon-organization"></span>
+                        GitHub</li>
+                    <li id="location">
+                        <span class="octicon octicon-location"></span>
+                        San Francisco</li>
+                    <li id="github-id">
+                        <span class="octicon octicon-mail"></span>
+                        <a href="https://github.com/octocat">octocat@github.com</a></li>
+                    <li id="blog">
+                        <span class="octicon octicon-link"></span>
+                        <a href="http://www.github.com/blog">http://www.github.com/blog</a></li>
                 </ul>
             </div>
         </section>
         <section class="stats">
             <button class="follow">
-              <span class="octicon octicon-person"></span>
-              Follow</button>
+                <span class="octicon octicon-person"></span>
+                Follow</button>
             <div class="counter">
                 <strong>1k</strong>
                 <p>Followers</p>
@@ -63,14 +73,44 @@
             </div>
         </section>
         <section class="popular-repos">
-          <h4>Popular repositories</h4>
-          <div class="repo-list">
-            <a class="repo-item" href=" ">octocat/Spoon-Knife</a>
-            <a class="repo-item" href=" ">octocat/Hello-World</a>
-            <a class="repo-item" href=" ">octocat/hello-world</a>
-            <a class="repo-item" href=" ">octocat/octocat.github.io</a>
-            <a class="repo-item" href=" ">octocat/git-consortium</a>
-          </div>
+            <h4>Popular repositories</h4>
+            <div class="repo-list">
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/Spoon-Knife
+                    <span class="stars">9,773
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/Hello-World
+                    <span class="stars">1,404
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/hello-world
+                    <span class="stars">10
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/octocat.github.io
+                    <span class="stars">8
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/git-consortium
+                    <span class="stars">5
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+            </div>
         </section>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
