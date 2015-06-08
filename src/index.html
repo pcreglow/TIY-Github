@@ -14,42 +14,53 @@
 </head>
 
 <body>
-    <section class="profile">
-      <div class="info">
-            <img src="img/octocat.jpg" alt="octocat">
+
+    <div class="container">
+        <section class="tabs">
+            <div class="tab-current">
+                <a id="tab-1" href=" " class="about">About</a>
+            </div>
+            <div class="tab-silent">
+                <a id="tab-2" href=" " class="repos">Repositories</a>
+            </div>
+        </section>
+        <section class="profile">
+            <div class="info">
+                <img src="img/octocat.jpg" alt="octocat">
 
 
-            <ul>
-                <li class="title">
-                    <h4>The Octocat</h4>
-                </li>
-                <li id="name">octocat</li>
-                <li id="Github">GitHub</li>
-                <li id="location">San Francisco</li>
-                <li id="github-id"><a href="octocat@github.com">octocat@github.com</a></li>
-                <li id="blog"><a href="http://www.github.com/blog">http://www.github.com/blog</a></li>
-            </ul>
-        </div>
-    </section>
-    <button class="follow">Follow</button>
-    <div class="counter">
-        <strong>1k</strong>
-        <p>Followers</p>
+                <ul>
+                    <li class="title">
+                        <h4>The Octocat</h4>
+                    </li>
+                    <li id="name">octocat</li>
+                    <li id="Github">GitHub</li>
+                    <li id="location">San Francisco</li>
+                    <li id="github-id"><a href="octocat@github.com">octocat@github.com</a></li>
+                    <li id="blog"><a href="http://www.github.com/blog">http://www.github.com/blog</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="stats">
+            <button class="follow">Follow</button>
+            <div class="counter">
+                <strong>1k</strong>
+                <p>Followers</p>
+            </div>
+            <div class="counter">
+                <strong>2</strong>
+                <p>Starred</p>
+            </div>
+            <div class="counter">
+                <strong>6</strong>
+                <p>Following</p>
+            </div>
+        </section>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </div>
-    <div class="counter">
-        <strong>2</strong>
-        <p>Starred</p>
-    </div>
-    <div class="counter">
-        <strong>6</strong>
-        <p>Following</p>
-    </div>
-
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
 </body>
 
 </html>
