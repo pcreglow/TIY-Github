@@ -170,7 +170,22 @@ strong {
   color: darkgrey;
   margin-bottom: 2em;
 }
+.popular-repos h4 {
+  border: 1px solid lightgrey;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
 
+
+}
+.popular-repos a {
+  display: block;
+  border: 1px solid lightgrey;
+  margin: 0 1em 0 1em;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
 
 
 
