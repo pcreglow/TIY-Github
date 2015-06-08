@@ -13,7 +13,7 @@
     "test",
     "tests"
   ],
-   "dependencies": {
-     "octicons": "*"
+  "dependencies": {
+    "octicons": "~2.4.1"
   }
 }
