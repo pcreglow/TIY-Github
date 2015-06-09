@@ -32,28 +32,28 @@
       </nav>
         <section class="profile">
             <div class="info">
-                <img src="img/octocat.jpg" alt="octocat">
-
+                <img src={{avatar_url}} alt="octocat">
+                <!-- "img/octocat.jpg" -->
 
                 <ul>
-                    <li class="title">
-                        <h4>The Octocat</h4>
+                    <li class="name">
+                        <h4>{{name}}</h4>
                     </li>
-                    <li id="name">
-                        <small>octocat</small>
+                    <li id="login">
+                        <small>{{login}}</small>
                     </li>
-                    <li id="Github">
+                    <li id="company">
                         <span class="octicon octicon-organization"></span>
-                        GitHub</li>
+                        {{company}}</li>
                     <li id="location">
                         <span class="octicon octicon-location"></span>
-                        San Francisco</li>
-                    <li id="github-id">
+                        {{location}}</li>
+                    <li id="email">
                         <span class="octicon octicon-mail"></span>
-                        <a href="https://github.com/octocat">octocat@github.com</a></li>
+                        <a href="https://github.com/octocat">{{email}}</a></li>
                     <li id="blog">
                         <span class="octicon octicon-link"></span>
-                        <a href="http://www.github.com/blog">http://www.github.com/blog</a></li>
+                        <a href="http://www.github.com/blog">{{blog}}</a></li>
                 </ul>
             </div>
         </section>
@@ -62,7 +62,7 @@
                 <span class="octicon octicon-person"></span>
                 Follow</button>
             <div class="counter">
-                <strong>1k</strong>
+                <strong>{{followers}}</strong>
                 <p>Followers</p>
             </div>
             <div class="counter">
@@ -70,7 +70,7 @@
                 <p>Starred</p>
             </div>
             <div class="counter">
-                <strong>6</strong>
+                <strong>{{following}}</strong>
                 <p>Following</p>
             </div>
         </section>
