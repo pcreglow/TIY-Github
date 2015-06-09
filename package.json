@@ -22,6 +22,7 @@
   "homepage": "https://github.com/pcreglow/TIY-Github",
   "devDependencies": {
     "bower": "^1.4.1",
+    "node-sass": "^3.1.2",
     "wiredep": "^2.2.2"
   }
 }
