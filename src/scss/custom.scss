@@ -55,11 +55,15 @@ img {
 .profile ul {
   list-style: none;
 }
+
+.profile li {
+  display: block;
+}
 h4 {
   padding-top: 1em;
   margin-bottom: 0;
 }
-#name {
+small {
   padding-bottom: 1em;
   font-size: 18px;
   color: darkgrey;
