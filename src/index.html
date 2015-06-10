@@ -18,8 +18,30 @@
 </head>
 
 <body>
+  <!-- <section class="grid">
+    <div class="unit">1</div>
+    <div class="unit">2</div>
+    <div class="unit">3</div>
+    <div class="unit">4</div>
+    <div class="unit">5</div>
+    <div class="unit">6</div>
+    <div class="unit">7</div>
+    <div class="unit">8</div>
+  </section>
+  <section class="grid">
+  <div class="unit-span-2">2 col</div>
+  <div class="unit-span-4">4 col</div>
+  <div class="unit-span-2">2 col</div>
+  </section>
+  <section class="grid">
+    <div class="unit-span-4 offset-2">.unit-span-2.offset-2</div>
+  </section> -->
 
     <div class="container">
+      <select>
+        <option selected>octocat</option>
+        <option>pcreglow</option>
+      </select>
       <nav>
         <ul class="tabs">
             <li class="tab-current">
@@ -32,28 +54,28 @@
       </nav>
         <section class="profile">
             <div class="info">
-                <img src={{avatar_url}} alt="octocat">
+                <img src={{avatar_url}} id="avatar">
                 <!-- "img/octocat.jpg" -->
 
                 <ul>
-                    <li class="name">
+                    <li data-bind="user.name">
                         <h4>{{name}}</h4>
                     </li>
-                    <li id="login">
+                    <li data-bind="user.login">
                         <small>{{login}}</small>
                     </li>
-                    <li id="company">
-                        <span class="octicon octicon-organization"></span>
-                        {{company}}</li>
-                    <li id="location">
-                        <span class="octicon octicon-location"></span>
-                        {{location}}</li>
-                    <li id="email">
-                        <span class="octicon octicon-mail"></span>
-                        <a href="https://github.com/octocat">{{email}}</a></li>
-                    <li id="blog">
-                        <span class="octicon octicon-link"></span>
-                        <a href="http://www.github.com/blog">{{blog}}</a></li>
+                    <li class="octicon octicon-organization" data-bind="user.company">
+                        {{company}}
+                    </li>
+                    <li class="octicon octicon-location" data-bind="user.location">
+                        {{location}}
+                    </li>
+                    <li class="octicon octicon-mail" data-bind="user.email">
+                        <a href="https://github.com/octocat">{{email}}</a>
+                    </li>
+                    <li class="octicon octicon-link" data-bind="user.blog">
+                        <a href="http://www.github.com/blog">{{blog}}</a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -62,7 +84,7 @@
                 <span class="octicon octicon-person"></span>
                 Follow</button>
             <div class="counter">
-                <strong>{{followers}}</strong>
+                <strong data-bind="user.followers">{{followers}}</strong>
                 <p>Followers</p>
             </div>
             <div class="counter">
@@ -70,7 +92,7 @@
                 <p>Starred</p>
             </div>
             <div class="counter">
-                <strong>{{following}}</strong>
+                <strong data-bind="user.following">{{following}}</strong>
                 <p>Following</p>
             </div>
         </section>
@@ -114,6 +136,7 @@
                 </a>
             </div>
         </section>
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <!-- bower:js -->
@@ -122,6 +145,10 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+
+
+        </script>
     </div>
 </body>
 
