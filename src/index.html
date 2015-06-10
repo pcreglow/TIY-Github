@@ -36,7 +36,7 @@
       </nav>
         <section class="profile">
             <div class="info">
-                <img src="{{avatar_url}}" alt="avatar">
+                <img src={{avatar_url}} id="avatar">
                 <!-- "img/octocat.jpg" -->
 
                 <ul>
@@ -118,7 +118,7 @@
                 </a>
             </div>
         </section>
-        
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <!-- bower:js -->
@@ -127,6 +127,19 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+
+        $.getJSON('../api/github/users/octocat/octocat.json')
+        .then(function(octocat) {
+
+            console.log(octocat.avatar_url);
+
+            $avatar = $('img#avatar');
+
+            $avatar.attr('src', octocat.avatar_url);
+
+          });
+        </script>
     </div>
 </body>
 
