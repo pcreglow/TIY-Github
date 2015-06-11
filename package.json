@@ -1,0 +1,29 @@
+{
+  "name": "TIY-Github",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run bower:install",
+    "bower:install": "bower install --save",
+    "postbower:install": "wiredep --src src/index.html",
+    "sass": "node-sass src/scss/main.scss -o src/css/",
+    "test": "browser-sync start --server --files='js/*.js,test/index.html, test/spec/**/*.js' --startPath test/index.html",
+    "start": "browser-sync start --server --files='src/index.html,src/css/*.css,src/js/*.js' --startPath src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pcreglow/TIY-Github"
+  },
+  "author": "Phillip Creglow @pcreglow phillipcreglow@msn.com",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/pcreglow/TIY-Github/issues"
+  },
+  "homepage": "https://github.com/pcreglow/TIY-Github",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "node-sass": "^3.1.2",
+    "wiredep": "^2.2.2"
+  }
+}

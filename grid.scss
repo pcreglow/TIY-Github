@@ -1,0 +1,53 @@
+
+.grid {
+
+  $grid-width: 100%;
+  max-width: 100%;
+  background-color: grey;
+  outline: 2px solid cornflowerblue;
+  margin: 0 auto;
+  width: $grid-width;
+
+  @extend .clearfix;
+
+  .unit {
+    background-color: grey;
+    outline: 2px solid blue;
+
+    float: left;
+    width: ($grid-width/5);
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+  }
+  .unit-span-1 {
+    @extend .unit;
+
+    width: ($grid-width/5) * 1;
+    background-color: white;
+  }
+  .unit-span-2 {
+    @extend .unit;
+
+    width: ($grid-width/5) * 2;
+    background-color: white;
+  }
+  .unit-span-3 {
+    @extend .unit;
+
+    width: ($grid-width/5) * 3;
+    background-color: white;
+  }
+  .unit-span-4 {
+    @extend  .unit;
+
+    width: ($grid-width/5) * 4;
+    background-color: white;
+  }
+  .unit-span-5 {
+    @extend  .unit;
+
+    width: ($grid-width/5) * 5;
+    background-color: white;
+  }
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Github Revolution</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../bower_components/octicons/octicons/octicons.css">
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <section class="grid">
+    <div class="unit">1</div>
+    <div class="unit">2</div>
+    <div class="unit">3</div>
+    <div class="unit">4</div>
+    <div class="unit">5</div>
+  </section>
+  <section class="grid">
+  <div class="unit-span-2">2 col</div>
+  <div class="unit-span-3">3 col</div>
+  </section>
+  <section class="grid">
+    <div class="unit-span-1">1 col</div>
+    <div class="unit-span-3">3 col</div>
+    <div class="unit-span-1">1 col</div>
+  </section>
+  <section class="grid">
+    <div class="unit-span-4">4 col</div>
+    <div class="unit-span-1">1 col</div>
+  </section>
+  <section class="grid">
+    <div class="unit-span-5">5 col</div>
+  </section>
+  <section class="grid">
+    <div class="unit-span-4 offset-1">.unit-span-4.offset-1</div>
+  </section>
+
+    <div class="container">
+      <select>
+        <option selected>octocat</option>
+        <option>pcreglow</option>
+      </select>
+
+      <nav>
+        <ul class="tabs">
+            <li class="tab-current">
+                <a id="tab-1" href="#about" class="about">About</a>
+            </li>
+            <li class="tab-silent">
+                <a id="tab-2" href="#repos" class="repos">Repositories</a>
+            </li>
+        </ul>
+      </nav>
+
+
+      <section class="grid">
+        <div class="unit-span-2">
+        <section class="profile">
+            <div class="info">
+                <img src={{avatar_url}} id="avatar">
+                <!-- "img/octocat.jpg" -->
+
+                <ul>
+                    <li data-bind="user.name">
+                        <h4>{{name}}</h4>
+                    </li>
+                    <li data-bind="user.login">
+                        <small>{{login}}</small>
+                    </li>
+                    <li class="octicon octicon-organization" data-bind="user.company">
+                        {{company}}
+                    </li>
+                    <li class="octicon octicon-location" data-bind="user.location">
+                        {{location}}
+                    </li>
+                    <li class="octicon octicon-mail" data-bind="user.email">
+                        <a href="https://github.com/octocat">{{email}}</a>
+                    </li>
+                    <li class="octicon octicon-link" data-bind="user.blog">
+                        <a href="http://www.github.com/blog">{{blog}}</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="stats">
+            <button class="follow">
+                <span class="octicon octicon-person"></span>
+                Follow</button>
+            <div class="counter">
+                <strong data-bind="user.followers">{{followers}}</strong>
+                <p>Followers</p>
+            </div>
+            <div class="counter">
+                <strong>2</strong>
+                <p>Starred</p>
+            </div>
+            <div class="counter">
+                <strong data-bind="user.following">{{following}}</strong>
+                <p>Following</p>
+            </div>
+        </section>
+</div>
+
+
+
+<div class="unit-span-3">
+        <section class="popular-repos">
+            <h4>Popular repositories</h4>
+            <div class="repo-list">
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/Spoon-Knife
+                    <span class="stars">9,773
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/Hello-World
+                    <span class="stars">1,404
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/hello-world
+                    <span class="stars">10
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/octocat.github.io
+                    <span class="stars">8
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+                <a class="repo-item" href="#">
+                    <span class="octicon octicon-repo"></span>
+                    octocat/git-consortium
+                    <span class="stars">5
+                        <span class="octicon octicon-star"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+      </div>
+</section>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+
+
+        </script>
+    </div>
+</body>
+
+</html>
